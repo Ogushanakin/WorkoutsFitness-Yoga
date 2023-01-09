@@ -100,9 +100,9 @@
 			children = (
 				7119DCC4296AD7C700C002EC /* HomeController.swift */,
 				7119DCDA296ADE6400C002EC /* HomeHeaderView.swift */,
-				7119DCDC296ADEBD00C002EC /* HomeFooterView.swift */,
-				7119DCDE296ADF8600C002EC /* HomeCell.swift */,
 				7119DCE0296B024E00C002EC /* YourProgressView.swift */,
+				7119DCDE296ADF8600C002EC /* HomeCell.swift */,
+				7119DCDC296ADEBD00C002EC /* HomeFooterView.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";

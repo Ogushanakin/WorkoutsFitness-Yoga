@@ -78,7 +78,7 @@ final class HomeHeaderView: UIView {
         wcView.anchor(top: profileImageView.bottomAnchor, left: safeAreaLayoutGuide.leftAnchor,
                       right: safeAreaLayoutGuide.rightAnchor, paddingTop: 30, paddingLeft: 20,
                       paddingRight: 20)
-
+        
     }
 
 }

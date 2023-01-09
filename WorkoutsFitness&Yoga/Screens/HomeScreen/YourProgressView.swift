@@ -154,6 +154,104 @@ class WCView: UIView {
         return view
     }()
     
+    ///Third Line------------------------------------------------
+    
+    private let todayActivityTitle: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.text = "Today Activity"
+        label.font = UIFont.systemFont(ofSize: 16, weight: .medium)
+        return label
+    }()
+    
+    private let view: UIView = {
+        let view = UIView()
+        
+        view.backgroundColor = #colorLiteral(red: 0.9489933848, green: 0.9490416646, blue: 0.9454064965, alpha: 1)
+        view.layer.shadowColor = UIColor.lightGray.cgColor
+        view.layer.shadowOpacity = 0.3
+        view.layer.shadowOffset = CGSize.zero
+        view.layer.shadowRadius = 5
+        view.layer.cornerRadius = 20
+        
+        let hoursImage = UIImageView()
+        hoursImage.image = UIImage(systemName: "stopwatch")
+        hoursImage.tintColor = #colorLiteral(red: 0.07923045009, green: 0.249772191, blue: 0.2033925056, alpha: 1)
+        
+        let hourslabel = UILabel()
+        hourslabel.textAlignment = .center
+        hourslabel.text = "2 hours"
+        hourslabel.font = UIFont.systemFont(ofSize: 14, weight: .thin)
+        
+        view.addSubview(hourslabel)
+        hourslabel.anchor(left: view.safeAreaLayoutGuide.leftAnchor, bottom: view.bottomAnchor, paddingLeft: 42, paddingBottom: 4)
+        
+        view.addSubview(hoursImage)
+        hoursImage.centerX(inView: hourslabel)
+        hoursImage.setDimensions(height: 36, width: 36)
+        hoursImage.anchor(top: view.safeAreaLayoutGuide.topAnchor, bottom: hourslabel.topAnchor,
+                          paddingTop: 10, paddingBottom: 4)
+        
+        let linkingView = UIView()
+        linkingView.backgroundColor = .gray
+        
+        view.addSubview(linkingView)
+        linkingView.anchor(top: hoursImage.topAnchor, left: hourslabel.rightAnchor,
+                           bottom: hourslabel.bottomAnchor, paddingTop: 14, paddingLeft: 32,
+                           paddingBottom: 14, width: 1)
+        
+        let heatImage = UIImageView()
+        heatImage.image = UIImage(systemName: "flame")
+        heatImage.tintColor = #colorLiteral(red: 0.07923045009, green: 0.249772191, blue: 0.2033925056, alpha: 1)
+        
+        let heatlabel = UILabel()
+        heatlabel.textAlignment = .center
+        heatlabel.text = "365 kcal"
+        heatlabel.font = UIFont.systemFont(ofSize: 14, weight: .thin)
+        
+        view.addSubview(heatlabel)
+        heatlabel.centerY(inView: hourslabel)
+        heatlabel.anchor(left: linkingView.rightAnchor, paddingLeft: 32)
+        
+        view.addSubview(heatImage)
+        heatImage.centerX(inView: heatlabel)
+        heatImage.anchor(top: view.safeAreaLayoutGuide.topAnchor,
+                          bottom: heatlabel.topAnchor,
+                          paddingTop: 12, paddingBottom: 4)
+        heatImage.setDimensions(height: 34, width: 28)
+        
+        
+        let linkinggView = UIView()
+        linkinggView.backgroundColor = .gray
+        
+        view.addSubview(linkinggView)
+        linkinggView.anchor(top: heatImage.topAnchor, left: heatlabel.rightAnchor,
+                           bottom: heatlabel.bottomAnchor, paddingTop: 14, paddingLeft: 28,
+                           paddingBottom: 14, width: 1)
+        
+        let destinationImage = UIImageView()
+        destinationImage.image = UIImage(systemName: "figure.run")
+        destinationImage.tintColor = #colorLiteral(red: 0.07923045009, green: 0.249772191, blue: 0.2033925056, alpha: 1)
+        
+        let destinationlabel = UILabel()
+        destinationlabel.textAlignment = .center
+        destinationlabel.text = "2,4 km"
+        destinationlabel.font = UIFont.systemFont(ofSize: 14, weight: .thin)
+        
+        view.addSubview(destinationlabel)
+        destinationlabel.centerY(inView: heatlabel)
+        destinationlabel.anchor(left: linkinggView.rightAnchor, paddingLeft: 32)
+        
+        view.addSubview(destinationImage)
+        destinationImage.centerX(inView: destinationlabel)
+        destinationImage.anchor(top: view.safeAreaLayoutGuide.topAnchor,
+                                bottom: destinationlabel.topAnchor,
+                                paddingTop: 12, paddingBottom: 4)
+        destinationImage.setDimensions(height: 34, width: 28)
+        
+        return view
+    }()
+    
     // MARK: - Lifecycle
     
     override init(frame: CGRect) {
@@ -223,6 +321,14 @@ class WCView: UIView {
         addSubview(backgroundView)
         backgroundView.anchor(top: thirdStack.bottomAnchor, left: safeAreaLayoutGuide.leftAnchor,
                               right: safeAreaLayoutGuide.rightAnchor, paddingTop: 20, height: 86)
+        
+        addSubview(todayActivityTitle)
+        todayActivityTitle.anchor(top: backgroundView.bottomAnchor,
+                                  left: safeAreaLayoutGuide.leftAnchor, paddingTop: 20)
+        
+        addSubview(view)
+        view.anchor(top: todayActivityTitle.bottomAnchor, left: safeAreaLayoutGuide.leftAnchor,
+                              right: safeAreaLayoutGuide.rightAnchor, paddingTop: 10, height: 86)
         
         
     }
