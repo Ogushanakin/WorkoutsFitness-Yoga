@@ -18,6 +18,10 @@
 		7119DCDD296ADEBD00C002EC /* HomeFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119DCDC296ADEBD00C002EC /* HomeFooterView.swift */; };
 		7119DCDF296ADF8600C002EC /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119DCDE296ADF8600C002EC /* HomeCell.swift */; };
 		7119DCE1296B024E00C002EC /* YourProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7119DCE0296B024E00C002EC /* YourProgressView.swift */; };
+		711A8D69296C9BB700E824A7 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711A8D68296C9BB700E824A7 /* MainTabBarController.swift */; };
+		711A8D6B296C9F2900E824A7 /* WorkoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711A8D6A296C9F2900E824A7 /* WorkoutController.swift */; };
+		711A8D6D296C9F5800E824A7 /* ChallengeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711A8D6C296C9F5800E824A7 /* ChallengeController.swift */; };
+		711A8D6F296C9F7D00E824A7 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711A8D6E296C9F7D00E824A7 /* ProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		7119DCDC296ADEBD00C002EC /* HomeFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFooterView.swift; sourceTree = "<group>"; };
 		7119DCDE296ADF8600C002EC /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		7119DCE0296B024E00C002EC /* YourProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourProgressView.swift; sourceTree = "<group>"; };
+		711A8D68296C9BB700E824A7 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		711A8D6A296C9F2900E824A7 /* WorkoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutController.swift; sourceTree = "<group>"; };
+		711A8D6C296C9F5800E824A7 /* ChallengeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeController.swift; sourceTree = "<group>"; };
+		711A8D6E296C9F7D00E824A7 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,9 @@
 			children = (
 				7119DCD7296ADA5E00C002EC /* MainTabBar */,
 				7119DCD6296ADA5400C002EC /* HomeScreen */,
+				711A8D6A296C9F2900E824A7 /* WorkoutController.swift */,
+				711A8D6C296C9F5800E824A7 /* ChallengeController.swift */,
+				711A8D6E296C9F7D00E824A7 /* ProfileController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -110,6 +121,7 @@
 		7119DCD7296ADA5E00C002EC /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				711A8D68296C9BB700E824A7 /* MainTabBarController.swift */,
 			);
 			path = MainTabBar;
 			sourceTree = "<group>";
@@ -187,12 +199,16 @@
 			files = (
 				7119DCC5296AD7C700C002EC /* HomeController.swift in Sources */,
 				7119DCC1296AD7C700C002EC /* AppDelegate.swift in Sources */,
+				711A8D69296C9BB700E824A7 /* MainTabBarController.swift in Sources */,
 				7119DCDB296ADE6400C002EC /* HomeHeaderView.swift in Sources */,
 				7119DCC3296AD7C700C002EC /* SceneDelegate.swift in Sources */,
 				7119DCE1296B024E00C002EC /* YourProgressView.swift in Sources */,
 				7119DCD9296ADE0800C002EC /* Extension.swift in Sources */,
 				7119DCDD296ADEBD00C002EC /* HomeFooterView.swift in Sources */,
 				7119DCDF296ADF8600C002EC /* HomeCell.swift in Sources */,
+				711A8D6B296C9F2900E824A7 /* WorkoutController.swift in Sources */,
+				711A8D6D296C9F5800E824A7 /* ChallengeController.swift in Sources */,
+				711A8D6F296C9F7D00E824A7 /* ProfileController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

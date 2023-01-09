@@ -184,7 +184,7 @@ class WCView: UIView {
         hourslabel.font = UIFont.systemFont(ofSize: 14, weight: .thin)
         
         view.addSubview(hourslabel)
-        hourslabel.anchor(left: view.safeAreaLayoutGuide.leftAnchor, bottom: view.bottomAnchor, paddingLeft: 42, paddingBottom: 4)
+        hourslabel.anchor(left: view.safeAreaLayoutGuide.leftAnchor, bottom: view.bottomAnchor, paddingLeft: 34, paddingBottom: 4)
         
         view.addSubview(hoursImage)
         hoursImage.centerX(inView: hourslabel)

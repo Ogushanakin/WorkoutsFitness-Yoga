@@ -64,8 +64,8 @@ final class HomeHeaderView: UIView {
         stack.spacing = 2
         
         addSubview(stack)
-        stack.anchor(top: safeAreaLayoutGuide.topAnchor, left: safeAreaLayoutGuide.leftAnchor,
-                     paddingTop: 2, paddingLeft: 20)
+        stack.anchor(top: self.topAnchor, left: safeAreaLayoutGuide.leftAnchor,
+                     paddingTop: 90, paddingLeft: 20)
         
         profileImageView.setDimensions(height: 72, width: 72)
         profileImageView.layer.cornerRadius = 72 / 2
